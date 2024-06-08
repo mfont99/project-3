@@ -9,15 +9,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(myMap);
 
 // Load the filtered data
-const url = "https://raw.githubusercontent.com/mfont99/project-3/david/Resources/merged_data.json";
+const url = "https://raw.githubusercontent.com/mfont99/project-3/david/Resources/merged_data.geojson";
 d3.json(url).then(data => {
-    initializeMap(data);  
+    initializeMap(data);
 }).catch(error => {
     console.error("There was a problem with fetching or processing the data:", error);
 });
 
 function initializeMap(data) {
-    const years = [...new Set(data.map(item => item.Year))].sort();
+    const years = [...new Set(data.features.map(feature => feature.properties.Year))].sort();
     const yearSelect = document.getElementById('year-select');
 
     // Populate the dropdown menu with years
@@ -47,11 +47,13 @@ function updateMarkers(data, year) {
     });
 
     // Filter data based on the selected year
-    const filteredData = data.filter(item => item.Year === year);
+    const filteredData = data.features.filter(feature => feature.properties.Year == year);
 
     // Add markers to the map
-    filteredData.forEach(item => {
-        const marker = L.marker([item.lat, item.lng]).addTo(myMap);
-        marker.bindPopup(`<strong>County:</strong> ${item.County}<br><strong>Population:</strong> ${item.Population}`);
+    filteredData.forEach(feature => {
+        const coordinates = feature.geometry.coordinates;
+        const properties = feature.properties;
+        const marker = L.marker([coordinates[1], coordinates[0]]).addTo(myMap);
+        marker.bindPopup(`<strong>County:</strong> ${properties.County}<br><strong>Population:</strong> ${properties.Population}`);
     });
 }

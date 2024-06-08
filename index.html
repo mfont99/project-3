@@ -11,7 +11,16 @@
     </style>
 </head>
 <body>
-    <h1>Annual Age Adjusted Death Rate (>30) per County</h1>
+    <h1>Objectives</h1>
+    <p>During the course of this project we're targeting an indepth analysis of the opioid pandemic 
+        as it relates to morality rates across the country. We were able to gather some open data 
+        sources across the web and through the power of Data Engineering and Visualizations we came 
+        up with the below synopsis as told through the power of fancy maps and charts 
+        <br> Eventually what we ended up finding even more interesting was an even deeper dive into
+    looking at the opioid presccription rates and its relationship to the mortality rates. 
+    We decided to zone into the most affected areas and see what are the local opioids prescription trends over time
+and summize if there is any correlation between the high mortality rates and prescription rates</br></p>
+    <h2><center>Annual Age Adjusted Death Rate (>30) per County</center></h2>
     <label for="year-select">Select Year:</label>
     <select id="year-select">
         <!-- Options will be populated by JavaScript -->
@@ -20,5 +29,21 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="map.js"></script>
+    <h1>Welcome to the Appalachian</h1>
+    <P>We came to see that amongst all the states, a high concentration of the counties with highest death rates 
+        through a span of 15+ year, a majority of them were in the appalachian region of the country 
+        (see Kentucky, Virginia, West Virginia, Tennessee)</P> 
+        <img src="plot1.png" alt="Plot Image" style="width: 1400px; height: 650px;"/>
+
+        <P>So what do we see with the prescription rates in these states compared to national numbers?</P>
+        <style>
+            .inline-block-image {
+                display: inline-block;
+                width: 45%; /* Adjust as needed */
+                margin: 5px; /* Optional: to add some space between images */
+            }
+        </style>
+        <img src="plot2.png" alt="plot2.png" class="inline-block-image"/>
+        <img src="plot3.png" alt="plot3.png" class="inline-block-image"/>
 </body>
 </html>
