@@ -1,4 +1,4 @@
-let myMap = L.map("map", {
+let myMap = L.map("map1", {
     center: [37.8, -96],
     zoom: 4
 });
