@@ -8,7 +8,7 @@ Engineering: We Extracted Tranformed and Loaded various data sets from the CDC, 
 
 Visualization: Using Javascript and HTML we were able to plot a visual map of the Opioids related mortality rates by counties over a time span. We got to use seaborn to plot a more dynamic visual representaion of the counties with the highest mortality numbers.  
 
-HTML link:
+HTML link: https://mfont99.github.io/project-3/
 
 
 Citations:
