@@ -1,0 +1,17 @@
+﻿icd10_code,classification,injury
+X40,Unintentional,Poisonings
+X41,Unintentional,Drug use disorders
+X42,Unintentional,Drug use disorders
+X43,Unintentional,Poisonings
+X44,Unintentional,Drug use disorders
+X60,Intentional,Self-inflicted injuries
+X61,Intentional,Self-inflicted injuries
+X62,Intentional,Self-inflicted injuries
+X63,Intentional,Self-inflicted injuries
+X64,Intentional,Self-inflicted injuries
+X85,Intentional,Violence
+Y10,Undetermined Intent,Ill-defined injuries/accidents
+Y11,Undetermined Intent,Ill-defined injuries/accidents
+Y12,Undetermined Intent,Ill-defined injuries/accidents
+Y13,Undetermined Intent,Ill-defined injuries/accidents
+Y14,Undetermined Intent,Ill-defined injuries/accidents
