@@ -6,7 +6,7 @@ Description: In this project we ventured into the world of opioids. Diving into 
 Engineering: We Extracted Tranformed and Loaded various data sets from the CDC, Census Buraeu and US county Latitude and logitude coordinates to get a clear picture of the story behind the numbers and help build a visually aesthetic picture behind the Opioids pandemic. After initial cleaning of the raw files we used PostgresSQL to house the info into set tables.  
 
 
-Visualization: Using Javascript and HTML we were able to plot a visual map of the Opioids related mortality rates by counties over a time span. We got to use seaborn to plot a more dynamic visual representaion of the counties with the highest mortality numbers, off of which we we're able to glean at the problem of opioids around the appalachian area of the country.   
+Visualization: Using Javascript and HTML we were able to plot a visual map of the Opioids related mortality rates by counties over a time span. As part of the excercise to use a new librabry not covered in class We got to use seaborn to plot a couple of more dynamic visual representaion of the counties with the highest mortality numbers, off of which we we're able to glean at the problem of opioids around the appalachian area of the country.   
 
 HTML link: https://mfont99.github.io/project-3/
 
